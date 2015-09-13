@@ -31,7 +31,6 @@ print(Target_Data$PlotTime[1:10])
 print(PlotTime2[1:10])
 
 ####Create Plot 1, save as plot1.png
-par(bg="transparent",ps=12)
 hist(Target_Data$Global_active_power, xlab = "Global Active Power (kilowatts)", main = "", col="red")
 title("Global Active Power")
 dev.copy(png, file="plot1.png")
