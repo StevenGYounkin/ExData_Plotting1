@@ -38,7 +38,7 @@ plot(PlotTime2,Target_Data$Global_active_power,xlab = "",ylab = "Global Active P
 plot(PlotTime2,Target_Data$Sub_metering_1,xlab = "",ylab = "Energy sub metering", "l", col="black", mar=c(2,2,2,2))
 points(PlotTime2,Target_Data$Sub_metering_2, "l", col="red")
 points(PlotTime2,Target_Data$Sub_metering_3, "l", col="blue")
-legend("topright",legend = c("Sub_metering_1 ","Sub_metering_2 ","Sub_metering_3 "), lty = c(1,1,1), col=c("black","red","blue"), cex = 0.9,adj=c(0,0), bty="n")
+legend("topright",legend = c("Sub_metering_1 ","Sub_metering_2 ","Sub_metering_3 "), lty = c(1,1,1), col=c("black","red","blue"), bty="n")
 ###create upper right panel
 plot(PlotTime2,Target_Data$Voltage,xlab = "datetime",ylab = "Voltage", "l")
 ###create lower right panel
