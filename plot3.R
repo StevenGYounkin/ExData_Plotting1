@@ -29,6 +29,7 @@ PlotTime2 <- strptime(Target_Data$PlotTime,"%d/%m/%Y %H:%M:%S")
 Target_Data
 print(Target_Data$PlotTime[1:10])
 print(PlotTime2[1:10])
+
 ###Create Plot 3, save as plot3.png
 plot(PlotTime2,Target_Data$Sub_metering_1,xlab = "",ylab = "Energy sub metering", "l", col="black", mar=c(2,2,2,2))
 points(PlotTime2,Target_Data$Sub_metering_2, "l", col="red")
